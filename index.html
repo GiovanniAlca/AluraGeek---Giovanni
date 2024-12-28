@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <header class="encabezado">
+        <img class="encabezado_imagen" src="img/CorazonesEncabezado.png" alt="corazones">
+        <h1 class="logo-text">GIO</h1>
+    </header>
+    <main class="main">
+        <section class="misProductos">
+            <h1 class="tituloMisProductos">Mis Productos:</h1>
+            <div >
+                <ul class="contenedorProductos" lista-productos>
+                    <li class="card">
+                        <img src="img/juego1.png" alt="Imagen de juego" class="imagenCard">
+                        <div class="cardInfo">
+                            <div class="cardInfoNombre">
+                                <p class="nombreProducto">The Binding of Issac Afterbirth</p>
+                            </div>
+                            <div class="cardPrecioEliminar">
+                                <p class="precioProducto">50</p>
+                                <img src="img/TrashIcon.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        <section class="addProductos">
+            <h1 class="tituloAddProductos">Agregar Producto:</h1>
+            <form class="contenedorFormulario" data-formulario>
+                <div class="nombreProducto">
+                    <input type="text" placeholder="nombre...." data-nombre>
+                </div>
+                <div class="precioProducto">
+                    <input type="number" placeholder="precio...." data-precio>
+                </div>
+                <div class="imagenProducto">
+                    <input type="url" placeholder="imagen...." data-imagen>
+                </div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footerAlura">
+            <img class="footer_imagen" src="img/CorazonesEncabezado.png" alt="">
+            <h1 class="tituloFooter">AluraGeek</h1>
+        </div>
+        <p class="textoFooter">DESARROLLADO POR GIOVANNI RAMIREZ</p>
+        <p class="textoFooter">ALURA LATAM - 2024</p>
+    </footer>
+    <script src="js/conexionAPI.js" type="module"></script>
+    <script src="js/mostrarProductos.js" type="module"></script>
+    <script src="js/agregarProducto.js" type="module"></script>
+</body>
+</html>

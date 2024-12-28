@@ -1,0 +1,91 @@
+/* --- Reset de Estilos --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* --- Configuración General --- */
+  html {
+    scroll-behavior: smooth; /* Desplazamiento suave */
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif; /* Fuente general */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Color del texto */
+    background-color: #f9f9f9; /* Fondo claro */
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+  
+  /* --- Enlaces --- */
+  a {
+    text-decoration: none; /* Sin subrayado */
+    color: #007bff; /* Color azul */
+    transition: color 0.3s ease; /* Transición suave */
+  }
+  
+  a:hover {
+    color: #0056b3; /* Azul más oscuro al pasar el mouse */
+  }
+  
+  /* --- Encabezados --- */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+  }
+  
+  /* --- Contenedor Principal --- */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 20px;
+  }
+  
+  /* --- Botones --- */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Azul */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+  }
+  
+  /* --- Formularios --- */
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: vertical; /* Permitir ajuste vertical */
+  }
+  
+  /* --- Imágenes --- */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* --- Footer --- */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    margin-top: 20px;
+  }
+  
