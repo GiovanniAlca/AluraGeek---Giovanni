@@ -4,9 +4,9 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json'); // Usa tu archivo db.json
 const middlewares = jsonServer.defaults();
 
-// Habilitar CORS con restricciones de dominio
+// Habilitar CORS para todos los dominios (permitir solicitudes de cualquier origen)
 server.use(cors({
-    origin: 'https://tudominio.com'  // Cambia esto por el dominio de tu app
+    origin: '*'  // Permite todas las solicitudes
 }));
 
 // Usar middlewares predeterminados de json-server
