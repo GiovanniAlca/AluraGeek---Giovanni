@@ -28,25 +28,23 @@ header{
 }
 
 main{
-    border: solid;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
 }
 
 .misProductos{
-    border: solid;
     width: auto;
     width: 60%;
     padding: 20px;
 }
 
 .contenedorProductos{
-    border: solid;
     margin: 10px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .card{
@@ -56,6 +54,14 @@ main{
     overflow: hidden;
     padding: 10px;
     margin: 10px;
+    border-radius: 10px;
+    border: solid;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: #1a84cb8d 3px 3px 10px 3px;
 }
 
 .imagenCard{
@@ -108,6 +114,18 @@ main{
     font-size: 40px;
 }
 
+input{
+    font-family: var(--estilo-letra);
+}
+
+.contenedorBotones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botones{
+    font-family: var(--estilo-letra);
+}
 
 footer{
     background-color: #1a84cb;

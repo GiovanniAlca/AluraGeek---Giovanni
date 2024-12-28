@@ -11,7 +11,8 @@ async function agregarProducto(evento) {
 
     try {
         await conexionAPI.enviarProducto(nombre,precio,imagen);
-        alert("producto agregado con exito")
+        alert("producto agregado con exito");
+        location.reload();
     } catch (error) {
         alert("Error al agregar el producto " + error.message);
     }
@@ -19,3 +20,4 @@ async function agregarProducto(evento) {
 }
 
 formulario.addEventListener("submit", evento => agregarProducto(evento));
+

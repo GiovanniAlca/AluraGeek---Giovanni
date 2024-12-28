@@ -24,8 +24,8 @@
                                 <p class="nombreProducto">The Binding of Issac Afterbirth</p>
                             </div>
                             <div class="cardPrecioEliminar">
-                                <p class="precioProducto">50</p>
-                                <img src="img/TrashIcon.png" alt="">
+                                <p class="precioProducto">S/.50</p>
+                                <img src="img/TrashIcon.png" alt="Eliminar" class="eliminarProducto" data-id>
                             </div>
                         </div>
                         
@@ -44,10 +44,13 @@
                     <input type="number" placeholder="precio...." data-precio>
                 </div>
                 <div class="imagenProducto">
-                    <input type="url" placeholder="imagen...." data-imagen>
+                    <input type="url" placeholder="Ingrese URL de imagen...." data-imagen>
                 </div>
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpiar</button>
+                <div class="contenedorBotones"> 
+                    <button class="botones" type="submit">Enviar</button>
+                    <button class="botones" type="reset">Limpiar</button>
+                </div>
+                
             </form>
         </section>
     </main>

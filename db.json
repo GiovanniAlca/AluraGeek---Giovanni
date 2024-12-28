@@ -1,21 +1,9 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombre": "Lisa - The Painful DEFINITIVE EDITION",
-      "precio": 100,
-      "imagen": "https://gamefaqs.gamespot.com/a/box/2/9/0/941290_front.jpg"
-    },
-    {
-      "id": 2,
-      "nombre": "Lisa the painful",
-      "precio": 150,
-      "imagen": "https://gamefaqs.gamespot.com/a/box/2/9/0/941290_front.jpg"
-    },
-    {
-      "id": 3,
-      "nombre": "Producto 3",
-      "precio": 200,
+      "id": "174b",
+      "nombre": "aaaaaa",
+      "precio": "7",
       "imagen": "https://gamefaqs.gamespot.com/a/box/2/9/0/941290_front.jpg"
     }
   ]
