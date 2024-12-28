@@ -36,8 +36,8 @@ async function eliminarProducto(id) {
             alert("No se pudo eliminar el producto");
         } else {
             alert("Producto eliminado con éxito");
-            // Después de eliminar, actualizar la lista de productos
             actualizarListaProductos();
+            location.reload();
         }
     } else {
         alert("Eliminación cancelada");
