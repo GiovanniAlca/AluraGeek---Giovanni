@@ -71,7 +71,6 @@ main{
 }
 
 .cardInfoNombre{
-    border: solid;
     height: 20%;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -81,7 +80,6 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid;
     height: 7%;
     text-align: center;
     align-items: center;
