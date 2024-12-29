@@ -6,6 +6,7 @@
     <title>Alura Geek</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="icon" href="img/icon.png" type="image/png">
 </head>
 <body>
     <header class="encabezado">
@@ -18,13 +19,13 @@
             <div >
                 <ul class="contenedorProductos" lista-productos>
                     <li class="card">
-                        <img src="img/juego1.png" alt="Imagen de juego" class="imagenCard">
+                        <img src="img/Game Boy Classic.png" alt="Imagen de juego" class="imagenCard">
                         <div class="cardInfo">
                             <div class="cardInfoNombre">
-                                <p class="nombreProducto">The Binding of Issac Afterbirth</p>
+                                <p class="nombreProducto">Game Boy Classic</p>
                             </div>
                             <div class="cardPrecioEliminar">
-                                <p class="precioProducto">S/.50</p>
+                                <p class="precioProducto">S/.120</p>
                                 <img src="img/TrashIcon.png" alt="Eliminar" class="eliminarProducto" data-id>
                             </div>
                         </div>
@@ -38,13 +39,13 @@
             <h1 class="tituloAddProductos">Agregar Producto:</h1>
             <form class="contenedorFormulario" data-formulario>
                 <div class="nombreProducto">
-                    <input type="text" placeholder="nombre...." data-nombre>
+                    <input type="text" placeholder="nombre...." data-nombre required>
                 </div>
                 <div class="precioProducto">
-                    <input type="number" placeholder="precio...." data-precio>
+                    <input type="number" placeholder="precio...." data-precio required>
                 </div>
                 <div class="imagenProducto">
-                    <input type="url" placeholder="Ingrese URL de imagen...." data-imagen>
+                    <input type="url" placeholder="Ingrese URL de imagen...." data-imagen required>
                 </div>
                 <div class="contenedorBotones"> 
                     <button class="botones" type="submit">Enviar</button>
@@ -62,8 +63,20 @@
         <p class="textoFooter">DESARROLLADO POR GIOVANNI RAMIREZ</p>
         <p class="textoFooter">ALURA LATAM - 2024</p>
     </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-contenido">
+            <span class="modal-cerrar" id="cerrarModal">&times;</span>
+            <img src="" alt="Vista previa" class="modal-imagen" id="modalImagen">
+            <div class="modalNombreProducto">
+                <p id="nombreProducto"></p>
+            </div>
+        </div>
+    </div>
+    
     <script src="js/conexionAPI.js" type="module"></script>
     <script src="js/mostrarProductos.js" type="module"></script>
     <script src="js/agregarProducto.js" type="module"></script>
+
 </body>
 </html>

@@ -11,6 +11,7 @@ header{
     align-items: center;
     text-align: center;
     display: flex;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .encabezado_imagen{
@@ -35,13 +36,13 @@ main{
 
 .misProductos{
     width: auto;
-    width: 60%;
+    width: 58%;
     padding: 20px;
 }
 
 .contenedorProductos{
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -49,7 +50,7 @@ main{
 
 .card{
     background-color: #1a84cb;
-    width: 250px;
+    width: 225px;
     position: relative;
     overflow: hidden;
     padding: 10px;
@@ -77,7 +78,7 @@ main{
 }
 
 .cardInfoNombre{
-    height: 18%;
+    height: 16%;
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -100,10 +101,14 @@ main{
     overflow: hidden;
 }
 
+.eliminarProducto{
+    width: 30px;
+}
+
+
 .addProductos{
-    border: solid;
     width: auto;
-    width: 40%;
+    width: 42%;
     padding: 20px;
 }
 
@@ -134,6 +139,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .footerAlura{
@@ -153,9 +159,67 @@ footer{
     font-size: small;
 }
 
+.modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8); 
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+.modal-contenido {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+    gap:20px
+}
+
+.modal-imagen {
+    width: 100%;
+    object-fit: cover;
+    height: 90%;
+}
+
+.modal-cerrar {
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    font-size: 64px;
+    cursor: pointer;
+    color: red;
+}
+#nombreProducto{
+    font-family: var(--estilo-letra);
+}
+
+
 @media(max-width : 768px){
     header{
         
+    }
+
+    .logo-text{
+        font-size: 25px;
+    }
+
+    .encabezado_imagen{
+        width: 105px;
     }
 
     .tituloAddProductos,
@@ -176,5 +240,17 @@ footer{
 
     .tituloFooter{
         font-size: 20px;
+    }
+
+    .contenedorProductos{
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .card{
+        width: 125px;
     }
 }

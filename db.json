@@ -1,16 +1,5 @@
 {
   "productos": [
-    {
-      "id": "174b",
-      "nombre": "aaaaaa",
-      "precio": "7",
-      "imagen": "https://gamefaqs.gamespot.com/a/box/2/9/0/941290_front.jpg"
-    },
-    {
-      "nombre": "aa",
-      "precio": "5",
-      "imagen": "https://gamefaqs.gamespot.com/a/box/2/9/0/941290_front.jpg",
-      "id": "E--JS1z"
-    }
+    
   ]
 }
