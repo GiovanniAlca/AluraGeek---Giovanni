@@ -209,6 +209,7 @@ footer{
 }
 
 
+
 @media(max-width : 768px){
     header{
         
@@ -243,14 +244,20 @@ footer{
     }
 
     .contenedorProductos{
-        margin: 5px;
-        padding: 5px;
+        margin: 1px;
+        padding: 1px;
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        justify-content: space-between;
     }
 
     .card{
-        width: 125px;
+        width: 133px;
+        height: 230px;
     }
+
+    .eliminarProducto{
+        width: 20px;
+    }
+    
 }

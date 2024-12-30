@@ -40,16 +40,20 @@ async function eliminarProducto(id) {
         const respuesta = await fetch(`${serverURL}/productos/${id}`, {
             method: "DELETE",
         });
+
         if (!respuesta.ok) {
-            alert("No se pudo eliminar el producto");
+            mostrarAlerta("No se pudo eliminar el producto.");
         } else {
             console.log("Producto eliminado exitosamente");
             await actualizarListaProductos();
+            mostrarAlerta("Producto eliminado correctamente.");
         }
     } catch (error) {
         console.error("Error al eliminar el producto:", error);
+        mostrarAlerta("Error al eliminar el producto.");
     }
 }
+
 
 async function actualizarListaProductos() {
     try {
@@ -64,6 +68,34 @@ async function actualizarListaProductos() {
     }
 }
 
+
+function mostrarAlerta(mensaje) {
+    // Crear el contenedor de la alerta
+    const alerta = document.createElement('div');
+    alerta.textContent = mensaje;
+    alerta.style.position = 'fixed';
+    alerta.style.top = '50%';
+    alerta.style.left = '50%';
+    alerta.style.transform = 'translate(-50%, -50%)';
+    alerta.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+    alerta.style.color = '#fff';
+    alerta.style.padding = '20px';
+    alerta.style.borderRadius = '8px';
+    alerta.style.fontSize = '16px';
+    alerta.style.zIndex = '9999';
+    alerta.style.boxShadow = '0 0 15px rgba(0, 0, 0, 0.3)';
+    alerta.style.transition = 'opacity 0.5s ease';
+
+    // Agregar la alerta al DOM
+    document.body.appendChild(alerta);
+
+    // Después de 3 segundos, eliminar la alerta
+    setTimeout(() => {
+        alerta.style.opacity = '0';
+        setTimeout(() => alerta.remove(), 500);  // Eliminar después de la animación
+    }, 3000);
+}
+
 export const conexionAPI = {
-    listarProductos, enviarProducto, eliminarProducto
+    listarProductos, enviarProducto, eliminarProducto, mostrarAlerta, actualizarListaProductos
 }

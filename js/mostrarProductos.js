@@ -37,7 +37,7 @@ function CrearCard(nombre,precio,imagen, id) {
                 alert("Error al eliminar el producto: " + error.message);
             }
         } else {
-            alert("Eliminación cancelada");
+            conexionAPI.mostrarAlerta("Eliminación cancelada");
         }
     });
     return producto;    
